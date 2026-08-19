@@ -141,7 +141,7 @@ export default function DigitClassifier() {
           letterSpacing: "0.05em",
         }}
       >
-        28 × 28 · SGD Classifier · PostgreSQL Logged
+        28 × 28 · SGD Classifier · Supabase Active Learning
       </p>
 
       {/* Admin Modals */}
