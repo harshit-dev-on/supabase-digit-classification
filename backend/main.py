@@ -61,6 +61,18 @@ app.add_middleware(
 app.include_router(digit_recognition_router)
 
 
+@app.get("/")
+async def root():
+    """Root endpoint welcoming visitors and providing documentation links."""
+    return {
+        "status": "online",
+        "service": "Digit Classification ML Microservice",
+        "docs_url": "/docs",
+        "health_url": "/api/health",
+        "predict_endpoint": "/api/predict"
+    }
+
+
 @app.get("/api/health")
 async def health_check():
     """Health check reporting ML microservice status."""
