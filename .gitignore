@@ -1,0 +1,36 @@
+# ===========================================================================
+# Git Ignore Configuration (Root)
+# ===========================================================================
+
+# Dependencies
+node_modules/
+backend/venv/
+backend/.venv/
+backend/env/
+
+# Production builds
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Environment secrets (NEVER commit real API keys)
+.env
+.env.local
+.env*.local
+backend/.env
+frontend/.env.local
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+next-env.d.ts

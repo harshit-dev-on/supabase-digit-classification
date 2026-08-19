@@ -1,0 +1,19 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Environment secrets — never commit real .env
+.env
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: digit-classification-ml
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: FRONTEND_URL
+        value: https://your-vercel-app.vercel.app   # Update this with your Vercel deployment URL
+    autoDeploy: true
